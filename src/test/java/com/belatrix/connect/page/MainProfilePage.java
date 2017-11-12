@@ -17,8 +17,10 @@ public class MainProfilePage extends ParentPage {
             id("com.belatrixsf.connect:id/skype_id");
     By LBL_LOCATION = By.
             id("com.belatrixsf.connect:id/location_name");
+    //By BTN_BACK = By.
+    //		xpath("//android.widget.ImageButton[@content-desc='Navigate up']");
     By BTN_BACK = By.
-    		xpath("//android.widget.ImageButton[@content-desc='Navigate up']");
+    		xpath("//android.widget.ImageButton[@content-desc='Navegar hacia arriba']");
     By BTN_EDIT = By.
             id("com.belatrixsf.connect:id/action_edit_profile");
     By BTN_SIDEBAR = By.

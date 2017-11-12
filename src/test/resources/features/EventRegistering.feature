@@ -16,9 +16,9 @@ Feature: Like a user I want to register to an event
     And I confirm the action
     And I verify unregistration confirmed "<unregisteredMessage>"
     And I click in Got It button
-    Then I click on toolbar Back button
-    And I click on toolbar Back button
-    And I finally Logout of App
+    And I click on Back button
+    And I click on Back button
+    Then I finally Logout
 
 
     Examples:

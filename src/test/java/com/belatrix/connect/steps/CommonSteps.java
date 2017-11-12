@@ -27,7 +27,7 @@ public class CommonSteps extends ParentScenario {
         System.out.println("Profile Page is loaded sucessfully");
     }
 
-    @And("^I finally Logout of App$")
+    @And("^I finally Logout$")
     public void i_finally_Logout_of_App() {
         mainProfilePage.openMenuSideBar();
         System.out.println("I click on Side Bar LogOut Session");
@@ -51,7 +51,7 @@ public class CommonSteps extends ParentScenario {
         confirmationPage.clickOnGotIt();
     }
 
-    @Then("^I click on toolbar Back button$")
+    @Then("^I click on Back button$")
     public void iClickOnToolbarBackButton() throws Throwable {
         mainProfilePage.clickBack();
     }

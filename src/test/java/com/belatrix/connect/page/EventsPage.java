@@ -1,5 +1,6 @@
 package com.belatrix.connect.page;
 
+import org.apache.tools.ant.taskdefs.Sleep;
 import org.openqa.selenium.By;
 
 import com.belatrix.connect.framework.ParentPage;
@@ -18,10 +19,10 @@ public class EventsPage extends ParentPage {
     		.xpath("//android.widget.Button[@resource-id='com.belatrixsf.connect:id/event_more_button' and @instance='2']");
     
     By BTN_REGISTER = By
-    		.xpath("//android.widget.Button[@text='Register']");
+    		.id("com.belatrixsf.connect:id/btn_register");
 
     By BTN_REGISTERED = By
-    		.xpath("//android.widget.Button[@text='Registered']");
+    		.id("com.belatrixsf.connect:id/btn_register");
 
 
     public void clickEventMore(){
@@ -35,11 +36,13 @@ public class EventsPage extends ParentPage {
     }
 
     public void registerToEvent(){
-        click(BTN_REGISTER);
+    	handlingWaitToElement(BTN_REGISTER);
+        
+    	click(BTN_REGISTER);
     }
 
     public void unregisterToEvent(){
-        //handlingWaitToElement(BTN_REGISTERED);
+        handlingWaitToElement(BTN_REGISTERED);
         click(BTN_REGISTERED);
     }
 

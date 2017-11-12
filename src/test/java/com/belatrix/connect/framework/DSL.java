@@ -57,7 +57,7 @@ public abstract class DSL {
      * @param locator
      */
     public void handlingWaitToElement(By locator){
-        final WebDriverWait wait = new WebDriverWait(driver, 60);
+        final WebDriverWait wait = new WebDriverWait(driver, 120);
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
