@@ -26,9 +26,9 @@ Feature: Like a user requests find a specific Contact
     When I click Done button
     Then I should see the message of action done successfully
       And I back on Pages to Logout of APP
-      And I finally Logout of App
+      And I finally Logout
 
     Examples:
 
-      |  username  | password | contact                   | comment                                | action                         | tag           |
-      | msosa    | mariano123     | Alex |this is a comment of automation test    | Help with process improvements | android       |
+      |  username  | password   | contact              | comment                                | action                         | tag           |
+      | msosa      | mariano123 | Juan Bryan Estrada   |Este es un comentario de automation test    | Help with process improvements | android       |

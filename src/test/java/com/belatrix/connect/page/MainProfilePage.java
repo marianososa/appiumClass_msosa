@@ -26,9 +26,9 @@ public class MainProfilePage extends ParentPage {
     By BTN_SIDEBAR = By.
             xpath("//android.widget.ImageButton[@content-desc=\"Open\"]");
     By TAB_CONTACTS = By.
-            xpath("//android.widget.TextView[@text='CONTACTS']");
+            xpath("//android.widget.TextView[@text='Contacts']");
     By TAB_PROFILE = By.
-            xpath("//android.widget.TextView[@text='PROFILE']");
+            xpath("//android.widget.TextView[@text='Profile']");
     By TAB_EVENTS = By.xpath("//android.widget.TextView[@text='Events']");
 
 

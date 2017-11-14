@@ -75,8 +75,8 @@ public abstract class DSL {
      **/
     public void refreshWithSwipeTopBar()
     {
-        TouchAction action = new TouchAction((AppiumDriver) driver);
-        action.longPress(540,30).moveTo(540,900).release().perform();
+        //TouchAction action = new TouchAction((AppiumDriver) driver);
+        //action.longPress(540,30).moveTo(540,900).release().perform();
         //driver.navigate().back();
         driver.getPageSource();
     }

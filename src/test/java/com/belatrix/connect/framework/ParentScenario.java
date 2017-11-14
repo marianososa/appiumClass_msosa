@@ -28,8 +28,8 @@ public class ParentScenario {
         String url = "http://localhost:4723/wd/hub";
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability(MobileCapabilityType.PLATFORM_NAME, "ANDROID");
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME,"SWNF8SGIDU8SR4PJ");
-        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "6.0");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME,"192.168.111.103:5555");
+        cap.setCapability(MobileCapabilityType.PLATFORM_VERSION, "5.1");
         cap.setCapability(MobileCapabilityType.APP, "C:\\Users\\mariano.LAPTOP-0D0NH07L\\Desktop\\BxConnect_2.0.5.1.apk");
         cap.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.belatrixsf.connect");
         cap.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.belatrixsf.connect.ui.SplashActivity");

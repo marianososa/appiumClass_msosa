@@ -17,7 +17,7 @@ public class ContactProfilePage extends ParentPage{
     By CONTAINER_PAGE = By.
             id("com.belatrixsf.connect:id/account_swipe_refresh");
     By BTN_BACK_PAGE = By.
-            xpath("//android.widget.ImageButton[@content-desc=\"Desplazarse hacia arriba\"]");
+    		xpath("//android.widget.ImageButton[@content-desc='Navegar hacia arriba']");
     By BTN_KUDOS = By.
             id("com.belatrixsf.connect:id/action_recommend");
     By PROFILE_NAME = By.
@@ -44,7 +44,7 @@ public class ContactProfilePage extends ParentPage{
     {
         handlingWaitToElement(CONTAINER_PAGE);
         handlingWaitToElement(PROFILE_NAME);
-        handlingWaitToElement(BTN_BACK_PAGE);
+        //handlingWaitToElement(BTN_BACK_PAGE);
     }
 
     /**
@@ -52,6 +52,7 @@ public class ContactProfilePage extends ParentPage{
      **/
     public void clickRecommend()
     {
+    	handlingWaitToElement(BTN_KUDOS);
         click(BTN_KUDOS);
     }
 

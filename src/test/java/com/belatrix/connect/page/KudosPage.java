@@ -20,9 +20,10 @@ public class KudosPage extends ParentPage {
     By CONTAINER_PAGE = By.
             id("com.belatrixsf.connect:id/main_content");
     By BTN_BACK_PAGE = By.
-            xpath("//android.widget.ImageButton[@content-desc=\"Desplazarse hacia arriba\"]");
+            xpath("//android.widget.ImageButton[@content-desc='Navegar hacia arriba']");
     By BTN_DONE = By.
             id("com.belatrixsf.connect:id/action_done");
+  //android.widget.TextView[@content-desc="DONE"]
     By TXT_USER_NAME = By.
             id("com.belatrixsf.connect:id/contact_full_name");
     By SELECT_ACTION = By.
@@ -127,7 +128,8 @@ public class KudosPage extends ParentPage {
      **/
     public void doneKudo()
     {
-        click(BTN_DONE);
+    	handlingWaitToElement(BTN_DONE);
+    	 click(BTN_DONE);
     }
 
 
